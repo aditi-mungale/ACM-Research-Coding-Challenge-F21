@@ -1,8 +1,8 @@
-## Response: Aditi Mungale
+# Response: Aditi Mungale
 
 For this challenge, I decided to use Python as well as Microsoft Azure’s Text Analytics API.
 
-**My approach**
+## My approach
 
 I approached this problem by first brainstorming about how I determine the tone of a piece of text. Typically, I'll look at the adjectives/verbs in a sentence and determine their strength based on what my mind categorizes as strongly worded (Ex. "Hate" has a more intense connotation than "dislike"). My ability to determine the connotation of various words comes from education and personal experiences. Additionally, the length of a sentence, the position of words, and the use of figurative language also affects the attitude of the text. 
 
@@ -18,7 +18,7 @@ After running the input.txt with the python program, I wanted to see how it woul
 
 
 
-**My estimation of the sentiment score:**
+## My estimation of the sentiment score:
 
 After a first glance over the text, I estimated that the sentiment score would be close to 0 or be characterized as slightly“positive”. Lines 1-23 had more negative tone words whereas lines 25-53 had a more positive tone. Because the second half of the text is slightly larger, when combining the two sections together, there should be a “leftover” tone that is slightly positive. I would guess that the score is probably between .1 to .2.
 
@@ -26,7 +26,7 @@ After a first glance over the text, I estimated that the sentiment score would b
 
 
 
-**Code(how I used vader)**
+## Code(how I used vader)
 ```
 This is what I put in the command line to set up VADER: !pip install vaderSentiment
 
@@ -62,7 +62,7 @@ print("Final Sentiment Score ", total_compound / total_sentences)
 ```
 
 
-**Overall sentiment score:**
+## Overall sentiment score:
 
 *** **I found that the overall sentiment score was .13445.** *** after running input.txt through the VADER program. 
 I also calculated the overall positive, negative, and neutral scores(total score/total sentences):
@@ -80,7 +80,7 @@ neutral=  0.27076923076923076
 
 
 
-**What it means:**
+## What it means:
 
 According to most websites, a compound score between -.05 and .05 can be considered neutral. Because the score produced by the VADER program is definitely larger than this range, the text is categorized as “positive”. 
 
@@ -92,7 +92,7 @@ For instance, when I ran the same sentence “"I had the best day of my life." t
 
 	
 
-**Sources/Links** 
+## Sources/Links
 
 NLTK/Vader understanding:
 
