@@ -12,7 +12,7 @@ After some research, I decided to use the NLTK library because it already has a 
 
 To ascertain the sentiment score of the entire text, the program would keep a running total of the sum of the scores of each sentence and the total number of sentences. When the program finishes, it should return the average rating of the text (final sum of the compound scores/number of sentences analyzed). When I was actually coding, I decided to add a total for all of the neg, neu, and pos scores too because I was curious to see how they would compare to the averaged compound score.
 
-After running the input.txt with the python program, I wanted to see how it would compare to Microsoft Azure’s Text Analytics API's Sentiment Analysis feature. I divided the text into smaller String passages so I could properly use their API. Unfortunately, their tool doesn’t provide a compound score, unlike VADER, so I worked around this by averaging the total positive, negative, and neutral scores--like I did with VADER. I've also included the results from this method below as well as my thoughts on the different scores.
+After running the input.txt with the python program, I wanted to see how it would compare to Microsoft Azure’s Text Analytics API's Sentiment Analysis feature. I divided the text into smaller String passages so I could properly use their API. Unfortunately, their tool doesn’t provide a compound score, unlike VADER, so I worked around this by averaging the total positive, negative, and neutral scores--like I did with VADER when calculating its overall score components. I've also included the results from this method below as well as my thoughts on the different scores.
 
 
 
