@@ -26,8 +26,8 @@ After a first glance over the text, I estimated that the sentiment score would b
 
 
 
-**Code(VADER)**
-
+**Code(how I used vader)**
+```
 This is what I put in the command line to set up VADER: !pip install vaderSentiment
 
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
@@ -59,20 +59,23 @@ print("total_positive ", total_positive/ total_sentences)
 print("total_neutral ", total_neutral/ total_sentences)
 print("total_sentences ", total_sentences)	
 print("Final Sentiment Score ", total_compound / total_sentences)
+```
 
 
 **Overall sentiment score:**
 
-After running input.txt through the VADER program, **I found that the overall sentiment score was .13445.**
+*** **I found that the overall sentiment score was .13445.** *** after running input.txt through the VADER program. 
 I also calculated the overall positive, negative, and neutral scores(total score/total sentences):
-negative = 0.11369230769230769
-positive=  0.13288461538461538
+
+negative = 0.11369230769230769<br/>
+positive=  0.13288461538461538<br/>
 neutral = 0.7149999999999999
 
 
 However, after running the same text through Azure’s text analytics service and calculating the overall (total score/total sentences), they scored the text as: 
-negative=  0.4519230769230769
-positive=  0.23884615384615387
+
+negative=  0.4519230769230769<br/>
+positive=  0.23884615384615387<br/>
 neutral=  0.27076923076923076
 
 
@@ -91,33 +94,35 @@ For instance, when I ran the same sentence “"I had the best day of my life." t
 
 **Sources/Links** 
 
-NLTK/Vader understanding: https://towardsdatascience.com/design-your-own-sentiment-score-e524308cf787 
-https://realpython.com/python-nltk-sentiment-analysis/ 
-https://towardsdatascience.com/sentimental-analysis-using-vader-a3415fef7664 
+NLTK/Vader understanding:
+
+https://towardsdatascience.com/design-your-own-sentiment-score-e524308cf787 <br/>
+https://realpython.com/python-nltk-sentiment-analysis/ <br/>
+https://towardsdatascience.com/sentimental-analysis-using-vader-a3415fef7664 <br/>
 https://medium.com/@piocalderon/vader-sentiment-analysis-explained-f1c4f9101cd9 
 
-Looked at code structure to see how they used VADER in a loop:
+
+Looked at code structure to see how they used VADER in a loop:<br/>
 https://blog.quantinsti.com/vader-sentiment/ 
 
-Most of code body came from here, such as how to set up VADER, and how they accessed individual parts of the VADER output(like how to isolate ‘compound’ variable):
+Most of code body came from here, such as how to set up VADER, and how they accessed individual parts of the VADER output(like how to isolate ‘compound’ variable):<br/>
 https://www.geeksforgeeks.org/python-sentiment-analysis-using-vader/ 
 
-How to read file in Python:
+How to read file in Python:<br/>
 https://www.codegrepper.com/code-examples/python/how+to+read+files+in+python+with 
 
-Python string replace method(to remove quotations):
+Python string replace method(to remove quotations):<br/>
 https://www.w3schools.com/python/ref_string_replace.asp 
 https://www.delftstack.com/howto/python/python-remove-quotes-from-string/ 
 
-Python split method(split into sentences):
+Python split method(split into sentences):<br/>
 https://www.w3schools.com/python/ref_string_split.asp 
 
-Loops in Python:
+Loops in Python:<br/>
 https://www.w3schools.com/python/python_for_loops.asp 
 
-Azure sentiment analysis
-https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis?tabs=version-3-1 
-
+Azure sentiment analysis<br/>
+https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis?tabs=version-3-1 <br/>
 https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/quickstarts/client-libraries-rest-api?tabs=version-3-1&pivots=programming-language-python 
 
 
